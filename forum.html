@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educational Platform Forum</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .forum-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .category-card {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .category-card h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .category-card p {
+            color: #666;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .view-button {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .view-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+
+        .stats-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9ff;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .forum-categories {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎓 Educational Platform Forum</h1>
+            <p>Navigate through our comprehensive development plans and documentation</p>
+        </div>
+
+        <div class="forum-categories">
+            <div class="category-card">
+                <div class="category-icon">📋</div>
+                <h2>Initial Plan</h2>
+                <p>A concise overview of the educational website project with core structure, key features, and technical approach for IGCSE and A-Level students.</p>
+                <a href="initial-plan.html" class="view-button">View Plan</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">⚡</div>
+                <h2>Short Plan</h2>
+                <p>Condensed version with advanced sample questions, streamlined development approach, and 8-week timeline for rapid deployment.</p>
+                <a href="short-plan.html" class="view-button">View Plan</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🏗️</div>
+                <h2>Education Structure</h2>
+                <p>Detailed explanation of the educational system, exam levels, available courses, and user types with comprehensive content organization.</p>
+                <a href="education-structure.html" class="view-button">View Structure</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">📊</div>
+                <h2>Product Requirements Document</h2>
+                <p>Comprehensive PRD with detailed specifications, technical requirements, development roadmap, and success metrics for the complete platform.</p>
+                <a href="prd.html" class="view-button">View PRD</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎬</div>
+                <h2>Slideshow Presentation</h2>
+                <p>Interactive presentation showcasing the educational platform concept, target users, subjects, and development roadmap.</p>
+                <a href="slideshow.html" class="view-button">View Slideshow</a>
+            </div>
+
+
+        </div>
+
+        <div class="stats-section">
+            <h2 style="text-align: center; color: #667eea; margin-bottom: 30px;">📊 Project Overview</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Plans Created</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7</div>
+                    <div class="stat-label">Subjects Covered</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">3</div>
+                    <div class="stat-label">User Types</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Exam Levels</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🚀 Educational Platform Development Forum | Navigate through comprehensive plans and documentation</p>
+        </div>
+    </div>
+</body>
+</html> 

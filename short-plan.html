@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Short Plan - Educational Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .back-button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            line-height: 1.6;
+        }
+
+        .content-card h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content-card h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+        }
+
+        .content-card h4 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-card p {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .content-card ul, .content-card ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        .content-card li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .content-card strong {
+            color: #667eea;
+        }
+
+        .question-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="forum.html" class="back-button">← Back to Forum</a>
+        
+        <div class="header">
+            <h1>⚡ Short Plan</h1>
+            <p>IGCSE Website - Quick Plan</p>
+        </div>
+
+        <div class="content-card">
+            <h2>IGCSE Website - Quick Plan</h2>
+
+            <h3>Overview</h3>
+            <p>Educational website for IGCSE students with study resources, practice questions, and interactive tools.</p>
+
+            <h3>Key Features</h3>
+            <ul>
+                <li><strong>Subjects</strong>: Math, Physics, Chemistry, Biology, English, History, Geography</li>
+                <li><strong>Resources</strong>: Study guides, practice tests, video tutorials, interactive quizzes</li>
+                <li><strong>User Features</strong>: Progress tracking, personalized study plans, discussion forums</li>
+            </ul>
+
+            <h3>Technical Stack</h3>
+            <ul>
+                <li><strong>Frontend</strong>: React.js, TypeScript, Tailwind CSS</li>
+                <li><strong>Backend</strong>: Node.js, Express, PostgreSQL</li>
+                <li><strong>Hosting</strong>: Cloud platform (AWS/Azure)</li>
+                <li><strong>Authentication</strong>: JWT tokens</li>
+            </ul>
+
+            <h3>Development Timeline (8 weeks)</h3>
+            <ol>
+                <li><strong>Week 1-2</strong>: Planning & Design</li>
+                <li><strong>Week 3-4</strong>: Content Creation</li>
+                <li><strong>Week 5-6</strong>: Development</li>
+                <li><strong>Week 7</strong>: Testing</li>
+                <li><strong>Week 8</strong>: Deployment</li>
+            </ol>
+
+            <h3>Sample Questions (Advanced Level)</h3>
+            
+            <h4>Mathematics</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Solve the system of equations: x² + y² = 25 and x + y = 7, then find the exact value of sin(2θ) where θ is the angle between the line and positive x-axis.</p>
+                <ul>
+                    <li><strong>Answer:</strong> x = 4, y = 3 or x = 3, y = 4; sin(2θ) = 24/25</li>
+                    <li><strong>Example:</strong> Application in coordinate geometry and trigonometry</li>
+                </ul>
+            </div>
+
+            <h4>Physics</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> A particle moves in a circular path of radius 2m with angular velocity ω = 3t² rad/s. At t = 2s, find the tangential acceleration, centripetal acceleration, and total acceleration vector.</p>
+                <ul>
+                    <li><strong>Answer:</strong> a_t = 24 m/s², a_c = 72 m/s², |a_total| = 75.9 m/s²</li>
+                    <li><strong>Example:</strong> Satellite orbital mechanics, particle accelerators</li>
+                </ul>
+            </div>
+
+            <h4>Chemistry</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Calculate the pH of a 0.1M solution of CH₃COOH (Ka = 1.8×10⁻⁵) and determine the percentage ionization. Then predict how the pH changes when 0.05M NaOH is added.</p>
+                <ul>
+                    <li><strong>Answer:</strong> pH = 2.87, 1.34% ionized, pH increases to 4.74 (buffer region)</li>
+                    <li><strong>Example:</strong> Buffer solutions in biological systems, acid-base equilibria</li>
+                </ul>
+            </div>
+
+            <h4>Biology</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Explain the molecular mechanism of DNA replication, including the role of DNA polymerase, helicase, and ligase. Then describe how mutations in these enzymes could lead to genetic disorders.</p>
+                <ul>
+                    <li><strong>Answer:</strong> Semi-conservative replication with leading/lagging strands, proofreading mechanisms</li>
+                    <li><strong>Example:</strong> Cancer development, genetic diseases like xeroderma pigmentosum</li>
+                </ul>
+            </div>
+
+            <h4>English Literature</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Compare the use of dramatic irony in Shakespeare's "Othello" and Sophocles' "Oedipus Rex". Analyze how this literary device contributes to the tragic structure and audience engagement in both works.</p>
+                <ul>
+                    <li><strong>Answer:</strong> Different types of irony (verbal vs situational), audience knowledge vs character ignorance</li>
+                    <li><strong>Example:</strong> Modern applications in film and theater, psychological impact on readers</li>
+                </ul>
+            </div>
+
+            <h4>English Language</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Analyze the syntactic structure of the sentence: "The fact that the committee, despite having been warned repeatedly about the potential consequences of their decision, proceeded with the controversial proposal suggests a fundamental misunderstanding of their responsibilities."</p>
+                <ul>
+                    <li><strong>Answer:</strong> Complex sentence with embedded clauses, nominalization, passive voice construction</li>
+                    <li><strong>Example:</strong> Academic writing patterns, legal document analysis</li>
+                </ul>
+            </div>
+
+            <h4>History</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Evaluate the extent to which the Treaty of Versailles was responsible for the rise of Nazi Germany. Consider economic, political, and social factors, and compare with other contributing causes.</p>
+                <ul>
+                    <li><strong>Answer:</strong> Versailles created conditions but wasn't sole cause; hyperinflation, political instability, Great Depression</li>
+                    <li><strong>Example:</strong> Modern treaty negotiations, post-war reconstruction challenges</li>
+                </ul>
+            </div>
+
+            <h4>Geography</h4>
+            <div class="question-box">
+                <p><strong>Question:</strong> Using the concept of carrying capacity, analyze how climate change will affect agricultural productivity in the Sahel region. Consider both direct impacts and feedback loops with population dynamics.</p>
+                <ul>
+                    <li><strong>Answer:</strong> Reduced rainfall, soil degradation, migration patterns, food security challenges</li>
+                    <li><strong>Example:</strong> Current climate adaptation strategies, sustainable development goals</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>📚 Educational Platform Development | Short Plan</p>
+        </div>
+    </div>
+</body>
+</html> 

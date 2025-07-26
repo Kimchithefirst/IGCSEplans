@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Structure - Educational Platform</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .back-button {
+            background: rgba(255,255,255,0.2);
+            color: white;
+            border: 2px solid white;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .back-button:hover {
+            background: white;
+            color: #667eea;
+        }
+
+        .content-card {
+            background: white;
+            border-radius: 15px;
+            padding: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            line-height: 1.6;
+        }
+
+        .content-card h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .content-card h3 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin: 25px 0 15px 0;
+        }
+
+        .content-card h4 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+        }
+
+        .content-card p {
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .content-card ul, .content-card ol {
+            margin: 15px 0;
+            padding-left: 30px;
+        }
+
+        .content-card li {
+            margin: 8px 0;
+            line-height: 1.5;
+        }
+
+        .content-card strong {
+            color: #667eea;
+        }
+
+        .subject-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .user-type-box {
+            background: #fff8f8;
+            border-left: 4px solid #764ba2;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 2rem;
+            }
+            
+            .content-card {
+                padding: 20px;
+            }
+            
+            .container {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="forum.html" class="back-button">← Back to Forum</a>
+        
+        <div class="header">
+            <h1>🏗️ Education Structure</h1>
+            <p>Educational System Structure</p>
+        </div>
+
+        <div class="content-card">
+            <h2>Educational System Structure</h2>
+
+            <h3>Exam Levels</h3>
+
+            <h4>IGCSE (International General Certificate of Secondary Education)</h4>
+            <ul>
+                <li><strong>Age Group</strong>: 14-16 years old</li>
+                <li><strong>Level</strong>: Secondary education</li>
+                <li><strong>Duration</strong>: 2 years</li>
+                <li><strong>Purpose</strong>: Foundation for further education</li>
+                <li><strong>Grading</strong>: A*-G (9-1 in some regions)</li>
+            </ul>
+
+            <h4>A-Level (Advanced Level)</h4>
+            <ul>
+                <li><strong>Age Group</strong>: 16-18 years old</li>
+                <li><strong>Level</strong>: Pre-university education</li>
+                <li><strong>Duration</strong>: 2 years</li>
+                <li><strong>Purpose</strong>: University preparation</li>
+                <li><strong>Grading</strong>: A*-E</li>
+            </ul>
+
+            <h3>Available Courses</h3>
+
+            <h4>Core Subjects</h4>
+            <ol>
+                <li><strong>Mathematics</strong>
+                    <ul>
+                        <li>IGCSE: Algebra, geometry, statistics, trigonometry</li>
+                        <li>A-Level: Further mathematics, calculus, mechanics, statistics</li>
+                    </ul>
+                </li>
+                <li><strong>Biology</strong>
+                    <ul>
+                        <li>IGCSE: Cell biology, genetics, ecology, human biology</li>
+                        <li>A-Level: Advanced genetics, biochemistry, physiology, evolution</li>
+                    </ul>
+                </li>
+                <li><strong>Chemistry</strong>
+                    <ul>
+                        <li>IGCSE: Atomic structure, bonding, reactions, organic chemistry</li>
+                        <li>A-Level: Physical chemistry, organic synthesis, analytical chemistry</li>
+                    </ul>
+                </li>
+                <li><strong>Physics</strong>
+                    <ul>
+                        <li>IGCSE: Mechanics, electricity, waves, energy</li>
+                        <li>A-Level: Quantum physics, thermodynamics, electromagnetism</li>
+                    </ul>
+                </li>
+                <li><strong>English</strong>
+                    <ul>
+                        <li>IGCSE: Language and literature, creative writing, analysis</li>
+                        <li>A-Level: Advanced literature, critical analysis, comparative studies</li>
+                    </ul>
+                </li>
+                <li><strong>History</strong>
+                    <ul>
+                        <li>IGCSE: Modern world history, source analysis, essay writing</li>
+                        <li>A-Level: Specialized periods, historiography, research skills</li>
+                    </ul>
+                </li>
+                <li><strong>Economics</strong>
+                    <ul>
+                        <li>IGCSE: Basic economic concepts, market structures, government policy</li>
+                        <li>A-Level: Microeconomics, macroeconomics, international trade</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <h3>User Types</h3>
+
+            <h4>Students</h4>
+            <div class="user-type-box">
+                <p><strong>Primary Users</strong></p>
+                <ul>
+                    <li><strong>IGCSE Students</strong>: 14-16 years old
+                        <ul>
+                            <li>Need foundational knowledge</li>
+                            <li>Focus on exam preparation</li>
+                            <li>Require step-by-step guidance</li>
+                            <li>Benefit from interactive learning</li>
+                        </ul>
+                    </li>
+                    <li><strong>A-Level Students</strong>: 16-18 years old
+                        <ul>
+                            <li>Need advanced analytical skills</li>
+                            <li>Focus on university preparation</li>
+                            <li>Require independent study skills</li>
+                            <li>Benefit from in-depth analysis</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Student Needs:</strong></p>
+                <ul>
+                    <li>Practice questions and tests</li>
+                    <li>Study guides and revision materials</li>
+                    <li>Progress tracking</li>
+                    <li>Performance analytics</li>
+                    <li>Interactive learning tools</li>
+                    <li>Exam strategies and tips</li>
+                </ul>
+            </div>
+
+            <h4>Parents</h4>
+            <div class="user-type-box">
+                <p><strong>Support Users</strong></p>
+                <ul>
+                    <li><strong>IGCSE Parents</strong>: Supporting younger students
+                        <ul>
+                            <li>Monitor progress</li>
+                            <li>Help with study planning</li>
+                            <li>Understand curriculum requirements</li>
+                            <li>Communicate with teachers</li>
+                        </ul>
+                    </li>
+                    <li><strong>A-Level Parents</strong>: Supporting older students
+                        <ul>
+                            <li>University application guidance</li>
+                            <li>Career planning support</li>
+                            <li>Academic performance monitoring</li>
+                            <li>Financial planning for higher education</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Parent Needs:</strong></p>
+                <ul>
+                    <li>Progress reports and analytics</li>
+                    <li>Curriculum overview</li>
+                    <li>Study tips and resources</li>
+                    <li>Communication tools with teachers</li>
+                    <li>Exam schedules and important dates</li>
+                    <li>University/career guidance resources</li>
+                </ul>
+            </div>
+
+            <h4>Teachers</h4>
+            <div class="user-type-box">
+                <p><strong>Educational Professionals</strong></p>
+                <ul>
+                    <li><strong>IGCSE Teachers</strong>: Foundation level instruction
+                        <ul>
+                            <li>Curriculum delivery</li>
+                            <li>Student assessment</li>
+                            <li>Progress monitoring</li>
+                            <li>Parent communication</li>
+                        </ul>
+                    </li>
+                    <li><strong>A-Level Teachers</strong>: Advanced level instruction
+                        <ul>
+                            <li>Specialized subject knowledge</li>
+                            <li>University preparation guidance</li>
+                            <li>Research skills development</li>
+                            <li>Career counseling</li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <p><strong>Teacher Needs:</strong></p>
+                <ul>
+                    <li>Lesson planning resources</li>
+                    <li>Assessment tools and question banks</li>
+                    <li>Student progress tracking</li>
+                    <li>Parent communication tools</li>
+                    <li>Professional development materials</li>
+                    <li>Curriculum updates and changes</li>
+                </ul>
+            </div>
+
+            <h3>Website Structure Implications</h3>
+
+            <h4>Content Organization</h4>
+            <ul>
+                <li><strong>By Exam Level</strong>: IGCSE vs A-Level sections</li>
+                <li><strong>By Subject</strong>: Separate areas for each course</li>
+                <li><strong>By User Type</strong>: Different interfaces for students, parents, teachers</li>
+            </ul>
+
+            <h4>Feature Requirements</h4>
+            <ul>
+                <li><strong>Students</strong>: Interactive learning, practice tests, progress tracking</li>
+                <li><strong>Parents</strong>: Monitoring tools, communication features, guidance resources</li>
+                <li><strong>Teachers</strong>: Assessment tools, lesson resources, student management</li>
+            </ul>
+
+            <h4>Access Levels</h4>
+            <ul>
+                <li><strong>Students</strong>: Full access to their enrolled subjects</li>
+                <li><strong>Parents</strong>: Limited access to their child's progress and general resources</li>
+                <li><strong>Teachers</strong>: Full access to teaching resources and their students' data</li>
+            </ul>
+
+            <p>This structure ensures the website serves all user types effectively while maintaining appropriate access levels and content relevance for each exam level.</p>
+        </div>
+
+        <div class="footer">
+            <p>📚 Educational Platform Development | Education Structure</p>
+        </div>
+    </div>
+</body>
+</html> 
